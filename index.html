@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <section>
+                <div>
+                    <div class="slider-checkbox">
+                        <input id="slider" type="checkbox">
+                        <label for="slider"></label>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+
+        <script>
+            var userName = prompt('What is your name?')
+            var userAge = prompt('How old are you, ' + userName + '?')
+            if (userAge=>30) {
+                alert('I hope you brought your walker!')
+            } else if (userAge => 20) {
+                //do something else
+            }
+            else {
+                alert('You are super young!')
+            }
+            alert('Answer the following with Y or N')
+            var answerOne = prompt('Was I born in Washington?')
+            if (answerOne.toUpperCase === 'Y') {
+                alert('Yes. That is right. Correct.')
+            } else if (answerOne.toLowerCase === 'N') {
+                alter('No. That is wrong. Incorrect.')
+            } else {
+                alert('That is not what I wanted! Answer with Y or N')
+            }
+        </script>
+    </body>
+</html>
