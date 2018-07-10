@@ -27,9 +27,10 @@ console.log('here')
 if (userQ1.toUpperCase() === 'Y') {
     alert("You said you liked Pokemon.")
 } else if (userQ1.toUpperCase() === 'N') {
-    alert("You do not like Pokemon. Boo.")
+    alert("You do not like Pokemon. Boo.") 
 };
-console.log(userQ1)
+console.log('Does the user like pokemon:',userQ1)
+
 
     var userQ2 = prompt('Do you like baseball?')
     if (userQ2.toUpperCase() === 'Y') {
@@ -37,14 +38,17 @@ console.log(userQ1)
     } else if (userQ2.toUpperCase() === 'N') {
         alert('You do not like baseball.')
     };
-    console.log(userQ2)
+    console.log('Does the user like baseball:',userQ2)
+
+
     var userQ3 = prompt('Do you like Subway sandwiches?')
     if (userQ3.toUpperCase() === 'Y') {
         alert('You do like Subway!')
     } else if (userQ3.toUpperCase() === 'N') {
         alert('You do not like Subway.')
     };
-    console.log(userQ3)
+    console.log('Does the user like Subway:',userQ3)
+
 
     var userQ4 = prompt('Would a woodchuck chuck wood if he could?')
     if (userQ4.toUpperCase() === 'Y') {
@@ -52,12 +56,13 @@ console.log(userQ1)
     } else if (userQ4.toUpperCase() === 'N') {
         alert('Maybe he would not, you are right.')
     };
-    console.log(userQ4)
+    console.log('Would a wood chuck chuck if able:',userQ4)
+
 
     var userQ5 = prompt('Is Luis\'s stories from Antman the best part of the movie?')
     if (userQ5.toUpperCase() === 'Y') {
         alert('You said yes.')
     } else if (userQ5.toUpperCase() === 'N') {
-        alert('You accidently entered N instead of Y.')
+        alert('You accidently entered N instead of Y. Luis is always the best.')
     };
-    console.log(userQ5)
+    console.log('Does the user like Luis\'s stories:',userQ5)
