@@ -84,16 +84,19 @@ var points = 0;
 //   points++;
 //   console.log('Point change. New points value: ', points);
 // }
+function getQ1() {
+  var Lab3Q1 = prompt('You will be answering 5 questions for my project. Answers must be entered as either Y for yes or N for no. For every question correct you will recieve one points. Do you understand?'); //asks uses question and tells possible inputs will be y or n
+  if (Lab3Q1.toUpperCase() === 'Y') {
+    alert('You said you understand! This question counts for a point, congratulations.');
+    points++; //if question is correct, add 1 to points
+    console.log('Point change. New points value: ', points); // notifies log of a point change and tells new point value
+  }
+  else if (Lab3Q1.toUpperCase() === 'N') {
+    alert('You said you didn\'t understand. You missed out on a point.'); //alerts user they got it incorrect and lost out on a point
+  }
+}
+getQ1();
 
-var Lab3Q1 = prompt('You will be answering 5 questions for my project. Answers must be entered as either Y for yes or N for no. For every question correct you will recieve one points. Do you understand?'); //asks uses question and tells possible inputs will be y or n
-if (Lab3Q1.toUpperCase() === 'Y') {
-  alert('You said you understand! This question counts for a point, congratulations.');
-  points++; //if question is correct, add 1 to points
-  console.log('Point change. New points value: ', points); // notifies log of a point change and tells new point value
-}
-else if (Lab3Q1.toUpperCase() === 'N') {
-  alert('You said you didn\'t understand. You missed out on a point.'); //alerts user they got it incorrect and lost out on a point
-}
 
 var Lab3Q2 = prompt('Is Pikachu a Pokemon?');
 if (Lab3Q2.toUpperCase() === 'Y') {
