@@ -85,14 +85,14 @@ var points = 0;
 //   console.log('Point change. New points value: ', points);
 // }
 
-var Lab3Q1 = prompt('You will be answering 5 questions for my project. Answers must be entered as either Y for yes or N for no. For every question correct you will recieve one points. Do you understand?');
+var Lab3Q1 = prompt('You will be answering 5 questions for my project. Answers must be entered as either Y for yes or N for no. For every question correct you will recieve one points. Do you understand?'); //asks uses question and tells possible inputs will be y or n
 if (Lab3Q1.toUpperCase() === 'Y') {
   alert('You said you understand! This question counts for a point, congratulations.');
-  points++;
-  console.log('Point change. New points value: ', points);
+  points++; //if question is correct, add 1 to points
+  console.log('Point change. New points value: ', points); // notifies log of a point change and tells new point value
 }
 else if (Lab3Q1.toUpperCase() === 'N') {
-  alert('You said you didn\'t understand. You missed out on a point.');
+  alert('You said you didn\'t understand. You missed out on a point.'); //alerts user they got it incorrect and lost out on a point
 }
 
 var Lab3Q2 = prompt('Is Pikachu a Pokemon?');
@@ -135,31 +135,31 @@ else if (Lab3Q5.toUpperCase() === 'N') {
   alert('Sorry. That is not the right answer. No points for you.');
 }
 
-alert('For this next question you will be guessing a number between 1 and 5, You will have 4 tries to guess the correct answer.');
-var counter = 1;
+alert('For this next question you will be guessing a number between 1 and 5, You will have 4 tries to guess the correct answer.'); //tells user to guess between 1-5 and they have 4 tries
+var counter = 1; // defines variable counter to equal 1
 
-while (counter < 5) {
+while (counter < 5) { //if counter is less than 5 run this.
   var Lab3Q6 = prompt('Guess a number between 1 and 5. Possible inputs will be 1, 2, 3, 4, and 5.');
   if (Lab3Q6 === '3') {
     points++;
     alert('You got the question right! Congratulations, you currently have ' + points + ' points');
     console.log('Point change. New points value: ', points);
-    counter = 5;
+    counter = 5; // if user answers correctly set counter to 5.
     console.log('Counter set to:', counter, '. At 5 this question will be skipped.');
-  }
+  } //notifies log if counter hits 5 question will be skipped
   else if (Lab3Q6 === '1' || '2' || '4' || '5') {
-    alert('Sorry. That is not the right answer. Question attempted ' + counter + ' times. You will move on and not be given a point after 4 tries.');
-    counter++;
+    alert('Sorry. That is not the right answer. Question attempted ' + counter + ' times. You will move on and not be given a point after 4 tries.'); //notifies user answer was wrong, and what attempt they are on.
+    counter++; // adds 1 to counter to say we are on the next attempt
     console.log('Counter set to:', counter, 'At 5 this question will be skipped.');
   }
 }
 
 alert('For question 7 you will be guessing what one of my favorite letters are. Please enter any letter that you believe might be my favorite.');
 var counterQ7 = 1;
-var favLetter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y'];
+var favLetter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y']; //array with all possible right answers
 var Lab3Q7 = prompt('What is one of my favorite letters?');
 while (counterQ7 < 7) {
-  for (var i = 0; i < favLetter.length; i++) {
+  for (var i = 0; i < favLetter.length; i++) { // cycles through my array to check all possible inputs. variable
     if (Lab3Q7.toLowerCase() === favLetter[i]) {
       console.log(favLetter[i]);
       alert('That is correct! You got this right on attempt ' + counterQ7 + '. A point will be added.');
@@ -173,13 +173,13 @@ while (counterQ7 < 7) {
     else if (Lab3Q7.toLowerCase() === 'z') {
       alert('That is incorrect. This has been attempt ' + counterQ7 + '. You have a maximum of 6 attempts.');
       Lab3Q7 = prompt('Try guessing again');
-      console.log(counterQ7);
+      console.log(counterQ7); // test line to make sure my code was reaching this point.
       counterQ7++;
       console.log('Counter set to:', counterQ7, 'At 7 this question will be skipped.');
     }
   }
 }
-alert('You\'ve finished all 7 questions. You got ' + points + ' questions right out of a possible 7.');
+alert('You\'ve finished all 7 questions. You got ' + points + ' questions right out of a possible 7.'); // tells users questions right/possible score.
 document.write('You currenty have ' + points + ' points. A total of 7 points was possible.');
 
 
