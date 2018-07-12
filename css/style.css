@@ -2,21 +2,16 @@
     width: 100%;
     box-sizing: border-box;
 }
-
 .slider-checkbox {
     width: 3em;
     height: 1em;
-
 }
-
 .slider-checkbox * {
     transition: 350ms;
 }
-
 #slider {
     display: none;
 }
-
 .slider-checkbox > label {
     display:block;
     height:100%;
@@ -27,9 +22,7 @@
     padding-top: .1em;
     padding-left: .2em;
     margin: 1em 0;
-
 }
-
 .slider-checkbox div {
     width: .5em;
     height: .5em;
@@ -37,9 +30,17 @@
     border-radius: 2em;
 
 }
-
 input[type=checkbox]:checked + label {
     background:green;
     padding-left: 2em;
 }
 
+.button1 {
+    background-color: green;
+    border:none;
+    padding:15px,15px;
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 20px;
+};
