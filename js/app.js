@@ -164,6 +164,7 @@ while (counterQ7 < 7) {
       console.log(favLetter[i]);
       alert('That is correct! You got this right on attempt ' + counterQ7 + '. A point will be added.');
       points++;
+      console.log('Point change. New points value: ', points);
       counterQ7 = 7;
       console.log('Counter set to:', counterQ7, 'At 7 this question will be skipped.');
       console.log('Point change. New points value: ', points);
@@ -174,11 +175,12 @@ while (counterQ7 < 7) {
       Lab3Q7 = prompt('Try guessing again');
       console.log(counterQ7);
       counterQ7++;
+      console.log('Counter set to:', counterQ7, 'At 7 this question will be skipped.');
     }
   }
 }
 alert('You\'ve finished all 7 questions. You got ' + points + ' questions right out of a possible 7.');
-document.write('You currenty have ' + points + ' points.');
+document.write('You currenty have ' + points + ' points. A total of 7 points was possible.');
 
 
 // var nums = [1,2,3,4,5,6,7,8,9];
