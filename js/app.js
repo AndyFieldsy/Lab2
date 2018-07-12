@@ -158,24 +158,26 @@ alert('For question 7 you will be guessing what one of my favorite letters are. 
 var counterQ7 = 1;
 var favLetter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y']; //array with all possible right answers
 var Lab3Q7 = prompt('What is one of my favorite letters?');
-while (counterQ7 < 7) {
+while (counterQ7 < 6) {
   for (var i = 0; i < favLetter.length; i++) { // cycles through my array to check all possible inputs. variable
     if (Lab3Q7.toLowerCase() === favLetter[i]) {
       console.log(favLetter[i]);
       alert('That is correct! You got this right on attempt ' + counterQ7 + '. A point will be added.');
       points++;
       console.log('Point change. New points value: ', points);
-      counterQ7 = 7;
+      counterQ7 = 6;
       console.log('Counter set to:', counterQ7, 'At 7 this question will be skipped.');
       console.log('Point change. New points value: ', points);
       break;
     }
     else if (Lab3Q7.toLowerCase() === 'z') {
-      alert('That is incorrect. This has been attempt ' + counterQ7 + '. You have a maximum of 6 attempts.');
-      Lab3Q7 = prompt('Try guessing again');
-      console.log(counterQ7); // test line to make sure my code was reaching this point.
-      counterQ7++;
-      console.log('Counter set to:', counterQ7, 'At 7 this question will be skipped.');
+      while (counterQ7 < 6) {alert('That is incorrect. This has been attempt ' + counterQ7 + '. You have a maximum of 6 attempts.');
+        counterQ7++;
+        if (counter < 6) {Lab3Q7 = prompt('Try guessing again');}
+        console.log(counterQ7); // test line to make sure my code was reaching this point.
+        console.log('Counter set to:', counterQ7, 'At 7 this question will be skipped.');
+
+      }
     }
   }
 }
