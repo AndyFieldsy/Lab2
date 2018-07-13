@@ -148,6 +148,7 @@ function getQ5() {
     alert('Sorry. That is not the right answer. No points for you.');
   }
 }
+
 getQ5();
 
 alert('For this next question you will be guessing a number between 1 and 5, You will have 4 tries to guess the correct answer.'); //tells user to guess between 1-5 and they have 4 tries
@@ -180,6 +181,11 @@ alert('For question 7 you will be guessing what one of my favorite letters are. 
 function getQ7(){
   var counterQ7 = 1;
   var counter = 1;
+
+function getQ7() {
+  alert('For question 7 you will be guessing what one of my favorite letters are. Please enter any letter that you believe might be my favorite.');
+  var counterQ7 = 1;
+
   var favLetter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y']; //array with all possible right answers
   var Lab3Q7 = prompt('What is one of my favorite letters?');
   while (counterQ7 < 6) {
@@ -190,7 +196,11 @@ function getQ7(){
         points++;
         console.log('Point change. New points value: ', points);
         counterQ7 = 6;
+
         console.log('Counter set to:', counterQ7, 'At 6 this question will be skipped.');
+
+        console.log('Counter set to:', counterQ7, 'At 7 this question will be skipped.');
+
         console.log('Point change. New points value: ', points);
         break;
       }
