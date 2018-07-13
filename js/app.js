@@ -178,9 +178,8 @@ getQ6();
 alert('For question 7 you will be guessing what one of my favorite letters are. Please enter any letter that you believe might be my favorite.');
 
 
-function getQ7(){
-  var counterQ7 = 1;
-  var counter = 1;
+
+var counter = 1;
 
 function getQ7() {
   alert('For question 7 you will be guessing what one of my favorite letters are. Please enter any letter that you believe might be my favorite.');
